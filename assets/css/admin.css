@@ -1,0 +1,31 @@
+/* Admin Dashboard Styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.simple-shop-admin {
+    @apply bg-gray-100 min-h-screen dark:bg-gray-900;
+}
+
+.simple-shop-card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.simple-shop-card:hover {
+    transform: translateY(-5px) rotateX(5deg);
+}
+
+.simple-shop-heading {
+    @apply text-2xl font-bold mb-4 text-gray-800 dark:text-white;
+}
+
+.simple-shop-button {
+    @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-all;
+    transform-style: preserve-3d;
+}
+
+.simple-shop-button:hover {
+    transform: translateY(-2px) translateZ(10px);
+}
